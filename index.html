@@ -1,103 +1,107 @@
-<section class="news-section">
-  <div class="page">
-    <h1>LATEST NEWS</h1>
-    <div class="archive">
-      <article class="article">
-        <img id="header-img" alt="main article" />
-        <h2>
-          <a id="header-article"></a>
-        </h2>
-        <p id="header-desc">No Article Description.</p>
-      </article>
-      <article class="article">
-        <img
-          id="article-img-1"
-          src="http://placekitten.com/g/200/200"
-          alt="main article"
-        />
-        <h3>
-          <a id="article-link-1">No Article Title</a>
-        </h3>
-        <p id="article-desc-1">No Article Description.</p>
-      </article>
-    </div>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body style="background-color: lightblue">
+    <header></header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>News</li>
+        <li>Weather</li>
+        <li style="float: right">About</li>
+      </ul>
+    </nav>
+    <main>
+      <section class="weather-section">
+        <h2>LATEST WEATHER</h2>
 
-<section class="news-section">
-  <div class="page">
-    <h1>LATEST NEWS</h1>
-    <div class="archive">
-      <article class="article">
-        <img id="header-img" alt="main article" />
-        <h2>
-          <a id="header-article"></a>
-        </h2>
-        <p id="header-desc">No Article Description.</p>
-      </article>
-      <article class="article">
-        <img
-          id="article-img-1"
-          src="http://placekitten.com/g/200/200"
-          alt="main article"
-        />
-        <h3>
-          <a id="article-link-1">No Article Title</a>
-        </h3>
-        <p id="article-desc-1">No Article Description.</p>
-      </article>
-    </div>
-  </div>
-</section>
+        <article class="article">
+          <section id="stats">
+            <div class="summary">
+              <h3 id="five-city">Tooele, Utah</h3>
+              <p>
+                Currently:
+                <span id="current-desc">Light Rain w/a chance of Snow</span>
+              </p>
+              <p>Temperature: <span id="current-temp">41°F</span></p>
+              <p>Wind Chill: <span id="current-windChill">38°F</span></p>
+              <p>Humidity: <span id="current-humid">88%</span></p>
+              <p>Wind Speed: <span id="current-windSpeed">SSE 5mph</span></p>
+            </div>
+          </section>
 
-<section class="news-section">
-  <div class="page">
-    <h1>LATEST NEWS</h1>
-    <div class="archive">
-      <article class="article">
-        <img id="header-img" alt="main article" />
-        <h2>
-          <a id="header-article"></a>
-        </h2>
-        <p id="header-desc">No Article Description.</p>
-      </article>
-      <article class="article">
-        <img
-          id="article-img-1"
-          src="http://placekitten.com/g/200/200"
-          alt="main article"
-        />
-        <h3>
-          <a id="article-link-1">No Article Title</a>
-        </h3>
-        <p id="article-desc-1">No Article Description.</p>
-      </article>
-    </div>
-  </div>
-</section>
+          <img
+            src="https://media.tenor.com/hKp3PEAYOwEAAAAM/snoopy-raining.gif"
+            alt="Stay Dry"
+          />
+        </article>
 
-<section class="news-section">
-  <div class="page">
-    <h1>LATEST NEWS</h1>
-    <div class="archive">
-      <article class="article">
-        <img id="header-img" alt="main article" />
-        <h2>
-          <a id="header-article"></a>
-        </h2>
-        <p id="header-desc">No Article Description.</p>
-      </article>
-      <article class="article">
-        <img
-          id="article-img-1"
-          src="http://placekitten.com/g/200/200"
-          alt="main article"
-        />
-        <h3>
-          <a id="article-link-1">No Article Title</a>
-        </h3>
-        <p id="article-desc-1">No Article Description.</p>
-      </article>
-    </div>
-  </div>
-</section>
+        <!-- 5 Day Forecast -->
+        <article id="forecastContainer">
+          <h2>5 Day Forecast</h2>
+          <h3>Tooele, Utah</h3>
+
+          <div class="flex">
+            <div class="flex-col">
+              <span>Day 1</span>
+              <img
+                src="https://media.tenor.com/aPamzFLB9Z8AAAAm/umbrella-rain.webp"
+                alt="Rainy"
+              />
+              <div>52°F</div>
+            </div>
+
+            <div class="flex-col">
+              <span>Day 2</span>
+              <img
+                src="https://media.tenor.com/qqW_PLtz05kAAAAm/happy-excited.webp"
+                alt="Rain"
+              />
+              <div>46°F</div>
+            </div>
+
+            <div class="flex-col">
+              <span>Day 3</span>
+              <img
+                src="https://media.tenor.com/h8jLsOJCDCwAAAA1/good-afternoon-sun.webp"
+                alt="Cloudy"
+              />
+              <div>40°F</div>
+            </div>
+
+            <div class="flex-col">
+              <span>Day 4</span>
+              <img
+                src="https://media.tenor.com/gTSdCkFp7QMAAAAm/timothy-winchester-littlest-friends.webp"
+                alt="Sunny"
+              />
+              <div>48°F</div>
+            </div>
+
+            <div class="flex-col">
+              <span>Day 5</span>
+              <img
+                src="https://media.tenor.com/G5duoOYLxyUAAAAm/seekersnotes-sun.webp"
+                alt="Sunny"
+              />
+              <div>58°F</div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Jenni Winegar | <a href="#">Tooele Technical College</a>
+      <br>
+      Last Updated: Dec 2025
+      </p>
+    </footer>
+  </body>
+</html>
+
